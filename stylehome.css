@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;            /* Enables horizontal alignment */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center;       /* Centers items vertically */
+}
+
+.logo {
+    display: flex;            /* Aligns logo image and text in a row */
+    align-items: center;      /* Centers logo text vertically with the image */
+    gap: 0.5rem;              /* Adds space between logo image and text */
+}
+
+.logo img {
+    display: block;           /* Ensures the image has no extra space around it */
+}
+
+nav ul {
+    display: flex;            /* Aligns navigation links horizontally */
+    list-style: none;         /* Removes default list styling */
+    gap: 1rem;                /* Adds space between each link */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: cyan;            /* Change text color to cyan on hover */
+    transition: color 0.3s ease;  /* Smooth transition effect */
+}
+.search-bar input[type="text"] {
+    background-color: black;  /* Set background to black */
+    color: white;             /* Set text color to white */
+    padding: 4px;            /* Add some padding for better visual */
+    border: 0px solid #04eaf7;   /* Optional: add a border around the input */
+    border-radius: 20px;       /* Optional: rounded corners for the input field */
+    box-shadow: inset 0 -2px 5px rgba(0, 255, 255, 0.7); /* 3D cyan shadow */
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: gray;              /* Set placeholder text color to gray */
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8); /* Enhanced shadow on focus */
+    outline: none;            /* Remove outline on focus */
+}
+
+body {
+    background-color: #002332;
+
+}
+/* {
+    font-family: 'Black Ops One', sans-serif;
+}
+*/
+/* Hero Section */
+.hero {
+    background-image: url("Group\ 57.png");
+    color: white;
+    text-align: center;
+    
+    display: flex;
+}
+/*.hero p {
+    margin-top: 20px ;
+    margin-left: 100px;
+}
+    */
+.hero1{
+    margin-left: 5%;
+    margin-right: 50%;
+}
+    
+.hero h1 {
+    font-size: 2.5rem;
+    margin-right:30px ;
+}
+.hero div img {
+    margin-right:50%;
+}
+
+.hero div h1:nth-child(2) {
+    color: #04eaf7;
+        font-family: 'Black Ops One', sans-serif;
+        font-size: 2.5rem; 
+        margin-left: 70px;/* Example size */
+               /* Example color */
+    
+}
+.hero div {
+    display: flex;                    /* Use Flexbox inside the div */
+    flex-direction: column;           /* Stack the text vertically */
+    max-width: 50%;                   /* Limit the width of the text area */
+}
+.hero button {
+    background-color: #000000;
+    color: rgb(2, 225, 254);
+    padding: 0.5rem 1.5rem;
+    border:0 0 10px solid rgb(0, 251, 255);
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50px;
+    font-size: 1cap;
+    width: 130px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Why Choose Section */
+.why-choose {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.why-choose .features {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.feature {
+    background-color: #1b263b;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 150px;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.card {
+    background-color: #1b263b;
+    color: white;
+    padding: 2rem;
+    width: 150px;
+    border-radius: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.testimonial {
+    background-color: #1b263b;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
