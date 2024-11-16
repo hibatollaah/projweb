@@ -8,7 +8,7 @@
 
 /* Header */
 header {
-    background-color: #0d1b2a;
+    background-color: #002226;
     color: white;
     padding: 1rem;
 }
@@ -19,17 +19,17 @@ header nav {
     align-items: center;       /* Centers items vertically */
 }
 
-.logo {
+#logo {
     display: flex;            /* Aligns logo image and text in a row */
     align-items: center;      /* Centers logo text vertically with the image */
     gap: 0.5rem;              /* Adds space between logo image and text */
 }
 
-.logo img {
+#logo img {
     display: block;           /* Ensures the image has no extra space around it */
 }
 
-nav ul {
+header nav ul {
     display: flex;            /* Aligns navigation links horizontally */
     list-style: none;         /* Removes default list styling */
     gap: 1rem;                /* Adds space between each link */
@@ -37,7 +37,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 
 body {
-    background-color: #002332;
+    background-color: #000000;
 
 }
 /* {
@@ -77,8 +77,9 @@ body {
     background-image: url("Group\ 57.png");
     color: white;
     text-align: center;
-    
     display: flex;
+    justify-content: center; 
+    
 }
 /*.hero p {
     margin-top: 20px ;
@@ -87,17 +88,13 @@ body {
     */
 .hero1{
     margin-left: 5%;
-    margin-right: 50%;
+
 }
     
 .hero h1 {
     font-size: 2.5rem;
     margin-right:30px ;
 }
-.hero div img {
-    margin-right:50%;
-}
-
 .hero div h1:nth-child(2) {
     color: #04eaf7;
         font-family: 'Black Ops One', sans-serif;
@@ -122,20 +119,32 @@ body {
     font-size: 1cap;
     width: 130px;
     position: relative;
-    left: 50%;
-    right: 50%;
+    bottom: 20px;
+    left : 20px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
 }
+
 
 /* Why Choose Section */
 .why-choose {
     text-align: center;
     padding: 3rem 1rem;
 }
+.why-choose h2{
+    display: inline-block;
+    top: 30px;
+}
+.why-choose h2:nth-child(1) {
+color: white;
+}
+.why-choose h2:nth-child(2){
+    color: #04eaf7;
+}
 .why-choose .features {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 40px;
 }
 .feature {
     background-color: #1b263b;
@@ -143,6 +152,10 @@ body {
     padding: 1rem;
     border-radius: 0.5rem;
     width: 150px;
+}
+.features .feature img{
+margin-left: 70px;
+margin-bottom: 20px;
 }
 
 /* Services Section */
