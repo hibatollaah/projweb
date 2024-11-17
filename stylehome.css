@@ -447,10 +447,10 @@ footer {
     top: 20px;
   }
   footer div #cc {
-    margin-right:1000px ;
+    margin-right:900px ;
     position: relative;
   }
   footer #border{
-    border: 0.25px solid #04eaf7;
+    border: 0.5px solid #04eaf7;
   }
   
