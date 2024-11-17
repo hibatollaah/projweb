@@ -8,7 +8,7 @@
 
 /* Header */
 header {
-    background-color: #002226;
+    background-color: #0d1b2a;
     color: white;
     padding: 1rem;
 }
@@ -16,7 +16,8 @@ header {
 header nav {
     display: flex;            /* Enables horizontal alignment */
     justify-content: space-between; /* Distributes space between items */
-    align-items: center;       /* Centers items vertically */
+    align-items: center; 
+    /* Centers items vertically */
 }
 
 #logo {
@@ -29,7 +30,7 @@ header nav {
     display: block;           /* Ensures the image has no extra space around it */
 }
 
-header nav ul {
+nav ul {
     display: flex;            /* Aligns navigation links horizontally */
     list-style: none;         /* Removes default list styling */
     gap: 1rem;                /* Adds space between each link */
@@ -37,7 +38,7 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
@@ -65,8 +66,7 @@ nav ul li a:hover {
 }
 
 body {
-    background-color: #000000;
-
+    background-color: black; 
 }
 /* {
     font-family: 'Black Ops One', sans-serif;
@@ -75,56 +75,93 @@ body {
 /* Hero Section */
 .hero {
     background-image: url("Group\ 57.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
+    max-height: 60%;
     display: flex;
-    justify-content: center; 
-    
 }
-/*.hero p {
-    margin-top: 20px ;
-    margin-left: 100px;
-}
-    */
-.hero1{
-    margin-left: 5%;
 
-}
+.hero1 > p:first-of-type {
+    margin-top: -15px ;
+    margin-left: 100px;
+    font-size: 1.5cap ;
+    color: rgb(139, 139, 139);
+    position: relative;
+    text-align: left;
+    font-family: 'Black Ops One', sans-serif;
     
-.hero h1 {
-    font-size: 2.5rem;
-    margin-right:30px ;
 }
-.hero div h1:nth-child(2) {
+
+    
+.hero1 h1 {
+    margin-top: 20px ;
+    margin-left: 70px;
+    
+    
+}
+
+
+.hero1 h1:first-of-type {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3.5rem;
+    margin-left: -20px;
+    margin-top: 150px;
+    
+}
+.hero1 h1:nth-child(2) {
     color: #04eaf7;
         font-family: 'Black Ops One', sans-serif;
-        font-size: 2.5rem; 
-        margin-left: 70px;/* Example size */
+        font-size: 3.5rem; 
+        margin-left: 80px;
+        ;/* Example size */
                /* Example color */
-    
+        line-height: 0%;
 }
-.hero div {
+.hero1 {
     display: flex;                    /* Use Flexbox inside the div */
     flex-direction: column;           /* Stack the text vertically */
-    max-width: 50%;                   /* Limit the width of the text area */
+    max-width: 50%;
+    margin-top: 70px;                   /* Limit the width of the text area */
 }
 .hero button {
     background-color: #000000;
     color: rgb(2, 225, 254);
-    padding: 0.5rem 1.5rem;
+    padding: 0.2rem 1.5rem;
     border:0 0 10px solid rgb(0, 251, 255);
     cursor: pointer;
-    margin-top: 50px;
+    margin-right: 0px;
+    margin-left: 30%;
     border-radius: 50px;
     font-size: 1cap;
     width: 130px;
-    position: relative;
-    bottom: 20px;
-    left : 20px;
+    
     box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
 }
+.hero2 {
+    display: flex;
+}
+.mitin {
+    margin-left: 42px;
+}
+.mitin p {
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Black Ops One', sans-serif;
+    border-left: #04eaf7 solid 1px ;
+    padding-left: 40px;
 
-
+}
+.mitin p:first-child {
+    text-shadow: 2px 2px 5px #04eaf7;
+}
+.mitin p:nth-of-type(2) {
+    font-size: 10px;
+    color: grey;
+}
+.robot1 {
+}
 /* Why Choose Section */
 .why-choose {
     text-align: center;
@@ -133,6 +170,8 @@ body {
 .why-choose h2{
     display: inline-block;
     top: 30px;
+    font-size: 40px;
+    font-family: 'Black Ops One', sans-serif;
 }
 
 .why-choose h2:nth-child(1) {
@@ -144,7 +183,7 @@ color: white;
 .why-choose .features {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 40px;
                                              
 }
@@ -153,13 +192,15 @@ color: white;
     color: white;
     padding: 1rem;
     border-radius: 0.5rem;
-    width: 150px;
+    width: 250px;
+    border: solid cyan 0.1pt;
+    
     background: -webkit-linear-gradient(45deg, #001719,#011719,#214b4f);/* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(45deg, #001719,#011719,#214b4f);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .features .feature img{
-margin-left: 70px;
-margin-bottom: 20px;
+margin-left: -200px;
+margin-bottom: 5px;
 }
 
 /* Services Section */
@@ -167,46 +208,95 @@ margin-bottom: 20px;
     text-align: center;
     color: white;
     margin-top: 60px;
+    max-height: 500px;
 
+}
+.services1 {
+    max-width: 50%;
 }
 .services h2{
     display: flex;
     justify-content: flex-start;
-    top: 30px;
-    margin-left: 200px;
+    
+    margin-left: 150px;
+    font-family: 'Black Ops One', sans-serif;
 }
 
-.services h2:nth-child(1) {
+.services1 h2:nth-child(1) { 
+    margin-top: 300px; 
 color: white;
+font-size: 35px;
 }
 .services h2:nth-child(2){
     color: #04eaf7;
+    font-size: 35px;
+
 }
 .services p{
     display: flex;
     justify-content: flex-start;
-    margin-left: 200px;
+    margin-left: 150px;
+    text-align: left;
+    color: grey;
+    font-family: 'Black Ops One', sans-serif;
 }
 .service-cards {
     display: grid;
     grid-template-columns:repeat(2,150px) ; /* Deux colonnes */
-    gap: 20px; /* Espacement entre les cartes */
-    margin-left: 750px;
-    margin-top: 20px;
+    gap: 70px; /* Espacement entre les cartes */
+    margin-left: 880px;
+    margin-top: 40px;
     position: relative;
-    top: -175px;
+    top: -350px;
    
 }
 
-.card {
-    background-color: #1b263b;
+.card1 {
+    background-image: url("courses/3d-rendering-biorobots-concept.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 2rem;
-    width: 150px;
     border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.card2 {
+    background-image: url("courses/futuristic-smart-city-with-5g-global-network-technology.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.card3 {
+    background-image: url("courses/futuristic-5g-wireless-network-ai-robot-hand-tap-wifi-icon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.card4 {
+    background-image: url("courses/electronics.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
 }
 
-button {
+.services button {
     background-color: #000000;
     color: rgb(2, 225, 254);
     padding: 0.5rem 1.5rem;
@@ -215,18 +305,20 @@ button {
     margin-top: 50px;
     border-radius: 50px;
     font-size: 1cap;
-    width: 130px;
+    width: 150px;
     position: relative;
-    bottom: 200px;
-    right : 450px;
+    bottom: 570px;
+    right : 320px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
 }
     /* Testimonials Section */
 .testimonials {
-    background-color: #0d1b2a;
+    
     color: white;
     padding: 3rem 1rem;
     text-align: center;
+    border-bottom: #01494d solid thin;
+   
 }
 .testimonial-cards {
     display: flex;
@@ -244,7 +336,7 @@ button {
     font-weight: bold;
     text-align: center;
     color: #04eaf7; /* Couleur cyan comme sur l'image */
-    margin-bottom: 2rem; /* Espacement au-dessous */
+    margin-bottom: 6rem; /* Espacement au-dessous */
 }
 .testimonial-cards {
     display: flex;
@@ -269,10 +361,58 @@ button {
     transform: translateY(-10px); /* Animation au survol */
     box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
 }
+.icons {
+    display: flex;
+    justify-content: center;
+    border-bottom: #01494d solid thin;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+.icon {
+    color: white;
+    display: flex;
+    margin-right: 15cap;
+}
+.icon4 {
+    color: white;
+    display: flex;
+    
+}
+.icon img{
+    margin-right: 20px;
+    
+}
+.icon4 img{
+    margin-right: 20px;
+    
+}
+.icon div{
+    border-left: #01494d solid thin ;
+    padding-left: 15px;
+}
+.icon4 div{
+    border-left: #01494d solid thin ;
+    padding-left: 15px;
+}
+.icon div p:nth-of-type(2) {
+    color: grey;
+    font-size: 10px;
+    font-family: 'Black Ops One', sans-serif;
+    
+}
+.icon div p:nth-of-type(1) {
+    font-size: 15px;
+    font-family: 'Black Ops One', sans-serif;
+    line-height: 40px;
 
-
-
-
+}
+.contact h2 {
+    font-family: 'Black Ops One', sans-serif;
+    color: white;
+}
+.contact {
+    display: flex;
+}
 
 /* Footer */
 footer {
