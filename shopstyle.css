@@ -76,257 +76,7 @@ body {
     background-color: black; 
     width: 100%;
 }
-/* {
-    font-family: 'Black Ops One', sans-serif;
-}
-*/
-/* Hero Section */
-.hero {
-    background-image: url("Group\ 57.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    max-height: 60%;
-    display: flex;
-}
 
-.hero1 > p:first-of-type {
-    margin-top: -15px ;
-    margin-left: 100px;
-    font-size: 1.5cap ;
-    color: rgb(139, 139, 139);
-    position: relative;
-    text-align: left;
-    font-family: 'Black Ops One', sans-serif;
-    
-}
-
-    
-.hero1 h1 {
-    margin-top: 20px ;
-    margin-left: 70px;
-    
-    
-}
-
-
-.hero1 h1:first-of-type {
-    font-family: 'Black Ops One', sans-serif;
-    font-size: 3.5rem;
-    margin-left: -20px;
-    margin-top: 150px;
-    
-}
-.hero1 h1:nth-child(2) {
-    color: #04eaf7;
-        font-family: 'Black Ops One', sans-serif;
-        font-size: 3.5rem; 
-        margin-left: 80px;
-        ;/* Example size */
-               /* Example color */
-        line-height: 0%;
-}
-.hero1 {
-    display: flex;                    /* Use Flexbox inside the div */
-    flex-direction: column;           /* Stack the text vertically */
-    max-width: 50%;
-    margin-top: 70px;                   /* Limit the width of the text area */
-}
-.hero button {
-    background-color: #000000;
-    color: rgb(2, 225, 254);
-    padding: 0.2rem 1.5rem;
-    border:0 0 10px solid rgb(0, 251, 255);
-    cursor: pointer;
-    margin-right: 0px;
-    margin-left: 30%;
-    border-radius: 50px;
-    font-size: 1cap;
-    width: 130px;
-    
-    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
-}
-.hero button:hover {
-    transform: scale(1.2); /* Agrandit le bouton à 120% */
-    
-}
-.hero2 {
-    display: flex;
-}
-.mitin {
-    margin-left: 42px;
-}
-.mitin p {
-    font-size: 30px;
-    text-align: left;
-    font-family: 'Black Ops One', sans-serif;
-    border-left: #04eaf7 solid 1px ;
-    padding-left: 40px;
-
-}
-.mitin p:first-child {
-    text-shadow: 2px 2px 5px #04eaf7;
-}
-.mitin p:nth-of-type(2) {
-    font-size: 10px;
-    color: grey;
-}
-.robot1 {
-}
-/* Why Choose Section */
-.why-choose {
-    text-align: center;
-    padding: 3rem 1rem;
-}
-.why-choose h2{
-    display: inline-block;
-    top: 30px;
-    font-size: 40px;
-    font-family: 'Black Ops One', sans-serif;
-}
-
-.why-choose h2:nth-child(1) {
-color: white;
-}
-.why-choose h2:nth-child(2){
-    color: #04eaf7;
-}
-.why-choose .features {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 40px;
-                                             
-}
-.feature {
-    background-color: #1b263b;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    width: 250px;
-    border: solid cyan 0.1pt;
-    
-    background: -webkit-linear-gradient(45deg, #001719,#011719,#214b4f);/* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #001719,#011719,#214b4f);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.features .feature img{
-margin-left: -200px;
-margin-bottom: 5px;
-}
-
-/* Services Section */
-.services {
-    text-align: center;
-    color: white;
-    margin-top: 60px;
-    max-height: 500px;
-
-}
-.services1 {
-    max-width: 50%;
-}
-.services h2{
-    display: flex;
-    justify-content: flex-start;
-    
-    margin-left: 150px;
-    font-family: 'Black Ops One', sans-serif;
-}
-
-.services1 h2:nth-child(1) { 
-    margin-top: 300px; 
-color: white;
-font-size: 35px;
-}
-.services h2:nth-child(2){
-    color: #04eaf7;
-    font-size: 35px;
-
-}
-.services p{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 150px;
-    text-align: left;
-    color: grey;
-    font-family: 'Black Ops One', sans-serif;
-}
-.service-cards {
-    display: grid;
-    grid-template-columns:repeat(2,150px) ; /* Deux colonnes */
-    gap: 70px; /* Espacement entre les cartes */
-    margin-left: 750px;
-    margin-top: 40px;
-    position: relative;
-    top: -350px;
-   
-}
-
-.card1 {
-    background-image: url("courses/3d-rendering-biorobots-concept.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    height: 250px;
-    width: 180px;
-}
-.card2 {
-    background-image: url("courses/futuristic-smart-city-with-5g-global-network-technology.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    height: 250px;
-    width: 180px;
-}
-.card3 {
-    background-image: url("courses/futuristic-5g-wireless-network-ai-robot-hand-tap-wifi-icon.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    height: 250px;
-    width: 180px;
-}
-.card4 {
-    background-image: url("courses/electronics.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    height: 250px;
-    width: 180px;
-}
-
-.services button {
-    background-color: #000000;
-    color: rgb(2, 225, 254);
-    padding: 0.5rem 1.5rem;
-    border:0 0 10px solid rgb(0, 251, 255);
-    cursor: pointer;
-    margin-top: 50px;
-    border-radius: 50px;
-    font-size: 1cap;
-    width: 150px;
-    position: relative;
-    bottom: 570px;
-    right : 320px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
-}
-.services button:hover {
-    transform: scale(1.2); /* Agrandit le bouton à 120% */
-    /* Change la couleur de fond au survol */
-}
     /* Testimonials Section */
 .testimonials {
     
@@ -558,5 +308,81 @@ footer #cc p {
 footer a:hover {
     color: #00bcd4; /* Change color on hover (e.g., teal) */
 }
+.equip_list {
+    margin-top: 150px;
+}
+.equip_list p {
+    color: white;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3cap;
+}
+
+.equipment_list {
+        display: flex;
+        justify-content: space-between; /* Distributes elements evenly with space between them */
+        align-items: center; /* Aligns items vertically in the center */
+        gap: 5px; /* Adds consistent spacing between items */
+        padding: 30px; /* Optional: Adds padding around the container */
+        margin-top: 50px;
+    }
+.eq-card {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .eq-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .eq-card .default-image {
+    opacity: 1;
+  }
+  
+  .eq-card .hover-image {
+    opacity: 0;
+    z-index: 1; /* Ensure it appears above the default image */
+  }
+  
+  .eq-card:hover .default-image {
+    opacity: 0;
+  }
+  
+  .eq-card:hover .hover-image {
+    opacity: 1;
+  }
+  
+  .eq-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .eq-card .eq-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .eq-card:hover .overlay {
+    opacity: 1;
+  }
 
   
